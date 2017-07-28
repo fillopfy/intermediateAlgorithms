@@ -17,7 +17,7 @@ var obj={"&":"&amp;",
 //using replace method to replace those char with their HTML wntitities, w need a callback function so that it can replace multiple characters 
 
 return str.replace(re,function(r){
-return obj[str.match(r)];
+return obj[r];
 });
 
 
