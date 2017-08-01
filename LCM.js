@@ -9,21 +9,21 @@ function gcd(m,n){
 
 var temp=0;
 
-if(a===0) return b;
+if(m===0) return n ;
 
 else
-if(b===0) return a;
+if(n===0) return m;
 
 else
 {
 
-while(b!=0)
+while(n!=0)
 {
- temp=b;
- b=a%b;
- a=temp;
+ temp=n;
+ n=m%n;
+ m=temp;
 }
-return a;
+return m;
 
 }
 
